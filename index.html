@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>图片粘贴&拖放读取</title>
+    <link type="text/css" href="demo.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="title">输入框粘贴和拖放图片demo</h1>
+    <div class="editor-container">
+        <div class="editor-area" contenteditable="true" id="editor">可在此粘贴或拖放图片，支持Chrome和Firefox，图片将显示在右侧列表</div>
+        <!--<textarea class="editor-area" name="" id="editor"></textarea>-->
+        <div class="img-list-area">
+            <ul class="img-list" id="img-list">
+                <!--<li>
+                    <img class="thumb-img" src="" alt="">
+                    <a class="delete-img" href="#"></a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+
+<script type="text/javascript" charset="utf-8" src="imageParser.js"></script>
+<script type="text/javascript">
+    imageParser.init('editor','img-list');
+</script>
+</body>
+</html>
