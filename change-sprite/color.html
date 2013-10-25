@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>canvas图片色值替换</title>
+<style type="text/css">
+    *{margin: 0;padding: 0}
+    body{color: #666;font-size: 12px}
+    .title{font-size: 26px;text-align: center;padding: 10px 0;line-height: 30px}
+	.canvas-container{height: 800px;overflow-y: scroll;border: #ccc 2px solid;text-align: center;margin-right:260px;position: relative}
+    .canvas-container-hover{background-color: #21d03a}
+    .canvas-container .tips{background: url(bg.jpg);width: 330px;height: 160px;position: absolute;z-index: -2;left: 50%;top: 50%;margin: -80px 0 0 -165px}
+	.data-info{width: 250px;height: 320px;border: #ccc 1px solid;position: absolute;right: 3px;top:50px;}
+	.data-info h2{line-height:30px;font-size: 14px;border-bottom: #ccc 1px solid;padding: 0 5px}
+	.data-info .color{margin: 10px}
+    .submit-button{position: absolute;right: 3px;top:380px;background: #1A6199;color: #fff;border-radius: 3px;cursor: pointer;border: 1px solid #BBB;padding: 7px}
+</style>
+</head>
+<body>
+    <h1 class="title">canvas图片色值替换</h1>
+	<!-- 图片取色区 -->
+	<div class="canvas-container" id="canvas-container">
+		<canvas id="color-canvas"></canvas>
+        <p class="tips"></p>
+	</div>
+	<!-- 信息区 -->
+    <div class="data-info">
+        <h2>选择颜色</h2>
+        <input type="text" id="input_color" class="color" />
+    </div>
+    <!--<a class="submit-button" id="submit_button">确定</a>-->
+</body>
+<script type="text/javascript" src="jscolor/jscolor.js"></script>
+<script type="text/javascript" src="color.js"></script>
+</html>
