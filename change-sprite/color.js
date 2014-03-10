@@ -100,3 +100,5 @@ input_color.addEventListener('change', function () {
     ctx.putImageData(image_data, 0, 0);
 });
 
+
+
